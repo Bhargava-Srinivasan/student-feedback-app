@@ -1,0 +1,9 @@
+---
+applications:
+  - name: student-feedback-app
+    memory: 512M
+    instances: 1
+    buildpack: nodejs_buildpack
+    path: .
+    env:
+      NODE_ENV: production
