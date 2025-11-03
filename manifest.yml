@@ -1,9 +1,9 @@
 ---
 applications:
-  - name: vite-react-shadcn
-    memory: 512M
-    disk_quota: 1G
+  - name: student-feedback-app
+    memory: 256M
+    instances: 1
+    random-route: true
     buildpacks:
       - nodejs_buildpack
-    command: npm run start
-    random-route: true
+    command: npm start
