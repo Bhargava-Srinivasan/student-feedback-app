@@ -2,8 +2,12 @@
 applications:
   - name: student-feedback-app
     memory: 256M
+    disk_quota: 1G
     instances: 1
     random-route: true
     buildpacks:
       - nodejs_buildpack
     command: npm start
+    env:
+      NODE_ENV: production
+    timeout: 180
